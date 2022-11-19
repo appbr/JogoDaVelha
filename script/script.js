@@ -114,7 +114,10 @@ function verificarVitoria() {
 
 function jogadaComputador() {
 
+
     if(enderecoSRC_Resumido('c5') == 'images/branco.png'){return 'c5'}
+    
+    
 
     if(enderecoSRC_Resumido('c1') == enderecoSRC_Resumido('c2') && enderecoSRC_Resumido('c3') == 'images/branco.png'){
         return 'c3'
@@ -179,6 +182,8 @@ function jogadaComputador() {
     if(enderecoSRC_Resumido('c3') == enderecoSRC_Resumido('c7') && enderecoSRC_Resumido('c5') == 'images/branco.png'){
         return 'c5'
     }
+
+
 
     return 'c' + Math.floor((Math.random() * 9) + 1);
 }
